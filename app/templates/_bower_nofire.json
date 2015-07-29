@@ -1,0 +1,15 @@
+{
+    "name": "<%= app_name %>",
+    "description": "<%= app_description %>",
+    "author": "<%= app_author %>",
+    "contributors": {},
+    "dependencies": {
+        "angular": ">=1.4.0",
+        "angular-ui-router": ">=0.2.11"
+    },
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/<%= githubusername %>/<%= app_name %>"
+    }
+}
