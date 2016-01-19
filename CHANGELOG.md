@@ -1,8 +1,16 @@
+### 0.5.7
+
+* Revised redaction of package.json.
+
+
+### 0.5.6
+
+* Revised redaction of readme.md.
+
 ### 0.5.5
 
-* Updated readme
-* Fixed name: js_components instead of js_scripts
-
+* Updated readme.
+* Fixed name: js_components instead of js_scripts.
 
 ### 0.5.4
 
