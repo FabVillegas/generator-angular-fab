@@ -56,9 +56,9 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
 	this.mkdir("app/images");
     this.mkdir("app/states");
     this.mkdir("app/states/example");
-    this.mkdir("app/js_scripts/factories");
-    this.mkdir("app/js_scripts/services");
-    this.mkdir("app/js_scripts/directives");
+    this.mkdir("app/js_components/factories");
+    this.mkdir("app/js_components/services");
+    this.mkdir("app/js_components/directives");
 	this.mkdir("app/php/resources");
   },
 

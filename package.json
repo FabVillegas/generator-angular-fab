@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-fab",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -22,6 +22,9 @@
   "keywords": [
     "yeoman-generator",
     "fab",
+	"material",
+	"angular-material",
+	"design",
     "angular",
     "webapp",
     "angularjs",

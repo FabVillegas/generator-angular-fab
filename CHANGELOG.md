@@ -1,14 +1,20 @@
+### 0.5.5
+
+* Updated readme
+* Fixed name: js_components instead of js_scripts
+
+
 ### 0.5.4
 
-* Fix error on generator script.
- 
+* Fixed error on generator script.
+
 ### 0.5.3
 
 * Added dist folder and its index file.
 
 ### 0.5.2
 
-* Fix an issue where ngAria was missing in the index file.
+* Fixed an issue where ngAria was missing in the index file.
 
 ### 0.5.1
 
@@ -16,4 +22,4 @@
 * Modified the directory structure.
 * Removed modules folder.
 * Eliminated skeleton, added angular-material instead.
-* Changelog added.
+* Added Changelog.
