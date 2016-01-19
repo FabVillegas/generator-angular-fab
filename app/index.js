@@ -37,11 +37,6 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
         name    : 'githubusername',
         message : 'What\'s your Github username'
       },
-      {
-        type    : 'confirm',
-        name    : 'angularfire',
-        message : 'Would you like to include AngularFire?'
-      },
     ];
 
     this.prompt(prompts, function(props){
@@ -49,7 +44,6 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
       this.app_description = props.app_description;
       this.app_author = props.app_author;
       this.githubusername = props.githubusername;
-      this.angularfire = props.angularfire;
       done();
     }.bind(this));
   },
@@ -57,20 +51,21 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
   scaffoldFolders: function(){
     this.mkdir("app");
     this.mkdir("app/css");
+	this.mkdir("app/fonts");
+	this.mkdir("app/images");
     this.mkdir("app/states");
     this.mkdir("app/states/example");
-    this.mkdir("app/assets");
-    this.mkdir("app/modules");
-    this.mkdir("app/js_shared_components/factories");
-    this.mkdir("app/js_shared_components/services");
-    this.mkdir("app/js_shared_components/directives");
-    this.mkdir("build");
+    this.mkdir("app/js_scripts/factories");
+    this.mkdir("app/js_scripts/services");
+    this.mkdir("app/js_scripts/directives");
+	this.mkdir("app/php/resources");
   },
 
   copyMainFiles: function(){
 
     this.copy("_exampleView.html", "app/states/example/exampleView.html");
     this.copy("_style.css", "app/css/style.css");
+	this.copy("_normalize.css", "app/css/normalize.css"):
     this.copy("_gruntfile.js", "Gruntfile.js");
 
     var context = {
@@ -81,16 +76,10 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
     };
 
     this.template("_package.json", "package.json", context);
-    if(this.angularfire){
-      this.template("_bower_withfire.json", "bower.json", context);
-      this.template("_index_withfire.html", "app/index.html", context);
-      this.template("_app_withfire.js", "app/app.js", context);
-    }
-    else{
-      this.template("_bower_nofire.json", "bower.json", context);
-      this.template("_index_nofire.html", "app/index.html", context);
-      this.template("_app_nofire.js", "app/app.js", context);
-    }
+	this.template("_bower.json", "bower.json", context);
+	this.template("_index.html", "app/index.html", context);
+	this.template("_app.js", "app/app.js", context);
+
     this.template("_README.md", "README.md", context);
     this.template("_exampleController.js", "app/states/example/exampleController.js", context);
     this.template("_exampleModel.js", "app/states/example/exampleModel.js", context);

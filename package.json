@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-fab",
-  "version": "0.2.4",
+  "version": "0.5.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -31,7 +31,10 @@
     "page",
     "app",
     "angularfire",
-    "firebase"
+    "firebase",
+	"generator",
+	"fabritzio",
+	"villegas"
   ],
   "dependencies": {
     "yeoman-generator": "^0.17.0",

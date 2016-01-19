@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="<%= app_name %>">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title><%= app_name %></title>
+		<!-- build:css css/vendor.css -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../bower_components/angular-material/angular-material.css">
+		<!-- endbuild -->
+		<!-- build:css css/main.css -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- endbuild -->
+	</head>
+	<body>
+		<div ui-view></div>
+		<!-- build:js js/vendor.js -->
+		<script src="../bower_components/angular/angular.js"></script>
+		<script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="../bower_components/angular-animate/angular-animate.js"></script>
+		<script src="../bower_components/angular-material/angular-material.js"></script>
+		<!-- endbuild -->
+		<!-- build:js js/app.js -->
+		<script src="app.js"></script>
+		<script src="states/example/exampleController.js"></script>
+		<script src="states/example/exampleModel.js"></script>
+		<!-- endbuild -->
+	</body>
+</html>
