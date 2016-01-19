@@ -65,7 +65,7 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
 
     this.copy("_exampleView.html", "app/states/example/exampleView.html");
     this.copy("_style.css", "app/css/style.css");
-	this.copy("_normalize.css", "app/css/normalize.css"):
+	this.copy("_normalize.css", "app/css/normalize.css");
     this.copy("_gruntfile.js", "Gruntfile.js");
 
     var context = {

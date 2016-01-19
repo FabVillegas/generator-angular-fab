@@ -1,11 +1,4 @@
-# generator-angular-fab [![Build Status](https://secure.travis-ci.org/FabVillegas/generator-angular-fab.png?branch=master)](https://travis-ci.org/FabVillegas/generator-angular-fab)
-
-> [Yeoman](http://yeoman.io) generator
-
-
-##
-
-
+# generator-angular-fab
 
 ### Install Yeoman
 
@@ -26,6 +19,24 @@ Finally, initiate the generator:
 ```bash
 yo angular-fab
 ```
+
+### GruntFile Tasks
+
+```bash
+grunt build
+```
+Creates a dist folder and compiles the necesarry files for a distribution package of the site or app.
+
+```bash
+grunt verify-js
+```
+Runs jshint to "compile" the controllers, models, factories, services, directives and the config files.
+
+```bash
+grunt copy-states
+```
+Copies the html files for each state that function as a view and pastes them inside the dist folder to properly update html /view modifications only.
+
 
 ### Comments?
 
