@@ -80,8 +80,7 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
     this.template("_package.json", "package.json", context);
 	this.template("_bower.json", "bower.json", context);
 	this.template("_index.html", "app/index.html", context);
-	this.template("_index_dist.html", "dist/index.html", context
-	this.template("_index.html", "app/index.html", context
+	this.template("_index_dist.html", "dist/index.html", context );
 	this.template("_app.js", "app/app.js", context);
 
     this.template("_README.md", "README.md", context);

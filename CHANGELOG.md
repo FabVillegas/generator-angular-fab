@@ -1,3 +1,7 @@
+### 0.5.4
+
+* Fix error on generator script.
+ 
 ### 0.5.3
 
 * Added dist folder and its index file.
