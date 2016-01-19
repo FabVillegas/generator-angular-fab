@@ -1,4 +1,4 @@
-angular.module('<%= app_name %>', [
+angular.module( '<%= app_name %>', [
   'ui.router',
   'ngMaterial'
 ]).

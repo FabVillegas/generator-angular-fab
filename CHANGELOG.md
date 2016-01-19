@@ -1,3 +1,11 @@
+### 0.5.3
+
+* Added dist folder and its index file.
+
+### 0.5.2
+
+* Fix an issue where ngAria was missing in the index file.
+
 ### 0.5.1
 
 * Added a Gruntfile task file to properly create a distribution package of the app or site.

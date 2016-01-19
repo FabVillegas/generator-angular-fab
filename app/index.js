@@ -49,7 +49,8 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
   },
 
   scaffoldFolders: function(){
-    this.mkdir("app");
+    this.mkdir("dist");
+	this.mkdir("app");
     this.mkdir("app/css");
 	this.mkdir("app/fonts");
 	this.mkdir("app/images");
@@ -65,6 +66,7 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
 
     this.copy("_exampleView.html", "app/states/example/exampleView.html");
     this.copy("_style.css", "app/css/style.css");
+	this.copy("_.gitignore", ".gitignore");
 	this.copy("_normalize.css", "app/css/normalize.css");
     this.copy("_gruntfile.js", "Gruntfile.js");
 
@@ -78,6 +80,8 @@ var AngularFabGenerator = yeoman.generators.Base.extend({
     this.template("_package.json", "package.json", context);
 	this.template("_bower.json", "bower.json", context);
 	this.template("_index.html", "app/index.html", context);
+	this.template("_index_dist.html", "dist/index.html", context
+	this.template("_index.html", "app/index.html", context
 	this.template("_app.js", "app/app.js", context);
 
     this.template("_README.md", "README.md", context);
