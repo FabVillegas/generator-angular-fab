@@ -7,6 +7,8 @@ I enjoy using the official generator of the yeoman team, but I feel many unneces
 
 Also, read this, which I recommend for better angular coding: https://github.com/johnpapa/angular-styleguide
 
+This generator uses the angular-material project for the layout, ui components, animations, etc: https://material.angularjs.org/latest/
+
 This generator ditches the directory structure of scripts and views:
 
 ```bash
@@ -21,7 +23,7 @@ app/
 |
 ```
 
-For a state structure that contain every file for each ui-state:
+For a state structure that contains every file for each ui-state:
 
 ```bash
 app/
@@ -37,8 +39,6 @@ app/
 |		|-directives/
 |
 ```
-
-This generator uses the angular-material project for the layout, ui components, animations, etc.
 
 ### Install Yeoman
 
